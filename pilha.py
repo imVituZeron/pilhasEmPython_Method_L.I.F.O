@@ -14,7 +14,11 @@ stack.append('C')
 for item in stack[::-1]:
     print(item)
 
+stack_copy = stack.copy()
+
 # com WHILE:
-while stack:
-    item = stack.pop()
+while stack_copy:
+    item = stack_copy.pop()
     print(item)
+
+print(f'stack: {stack}, stack_copy: {stack_copy}')
