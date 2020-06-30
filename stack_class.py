@@ -10,3 +10,9 @@ class Stack:
 
     def pop(self) -> Any:
         return self.__data.pop()
+
+    def peek(self) -> Any:
+        if not self.__data:
+            return []
+        
+        return self.__data[-1]
